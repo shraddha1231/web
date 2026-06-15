@@ -5,12 +5,12 @@
  
   tasks:
   
- - name: copy war
-   src: target/maven-web
-   dest: /opt/tomcat/webapps/maven-web
+   - name: copy war
+     src: target/maven-web
+     dest: /opt/tomcat/webapps/maven-web
   
- - name: stop
-   shell: /opt/tomcat/bin/shutdown.sh
+   - name: stop
+     shell: /opt/tomcat/bin/shutdown.sh
   
- - name: start
-   shell: /opt/start/bin/shartup.sh
+   - name: start
+     shell: /opt/start/bin/shartup.sh
