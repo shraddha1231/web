@@ -21,7 +21,7 @@ pipeline{
         
          stage('Archive'){
         steps{
-         archiveArtifacts artifats :'target/*.war', fingerprint : true
+         archiveArtifacts artifacts :'target/*.war', fingerprint : true
          }
         }
         
