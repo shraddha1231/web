@@ -14,5 +14,5 @@
    - name: stop
      shell: /opt/tomcat/bin/shutdown.sh
   
-   - name: start
-     shell: /opt/start/bin/shartup.sh
+   - name: start tomcat
+     shell: /opt/tomcat/bin/startup.sh
