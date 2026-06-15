@@ -1,16 +1,16 @@
 ---
--name: Deploy to tomcat
+- name: Deploy to tomcat
  hosts: web
  become: yes
  
  tasks:
   
- -name: copy war
+ - name: copy war
   src: target/maven-web
   dest: /opt/tomcat/webapps/maven-web
   
- -name: stop
+ - name: stop
   shell: /opt/tomcat/bin/shutdown.sh
   
- -name: start
+ - name: start
   shell: /opt/start/bin/shartup.sh
