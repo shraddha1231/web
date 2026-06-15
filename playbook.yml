@@ -6,8 +6,10 @@
   tasks:
   
    - name: copy war
-     src: target/maven-web
-     dest: /opt/tomcat/webapps/maven-web
+     copy:
+     
+       src: target/maven-web
+       dest: /opt/tomcat/webapps/maven-web
   
    - name: stop
      shell: /opt/tomcat/bin/shutdown.sh
